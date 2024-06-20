@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Efek smooth Behavior*/
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  position:relative;
+  text-align: left;
+  display:flex;
+  margin-left: 0;
+  align-items:center;
+  padding-left: 8%;
+  width: 30%;
+}
+
+.logo a button h2 {
+  background-color: #3b4997;
+  color: white;
+}
+
+.logo button {
+  border: none;
+  outline: none;
+}
+
+.navigasi {
+  display: flex;
+  /* justify-content: space-around; */
+  background-color: #3b4997;
+  width: 100%;
+  height: 70px;
+  color: white;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 1000; 
+}
+.menu {
+  position:relative;
+  display:flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  /* justify-content:safe; */
+}
+
+div .menu ul {
+  display: flex;
+  margin-left:auto;
+  margin-right: auto;
+  padding-right: 5%;
+  /* justify-content: space-between; */
+}
+
+.menu ul li {
+  list-style: none;
+  /* display: inline-block; */
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu ul li a :hover {
+  color: lightskyblue;
+  font-style: italic;
+}
+
+.banner {
+  background-color: #3b5999;
+  height: 880px;
+  text-align: center;
+  color: white;
+}
+
+.banner img {
+  border-radius: 80px;
+  height: 180px;
+  margin-top: 200px;
+}
+
+.banner h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.banner button {
+  margin-top: 90px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 100px;
+  border: none;
+}
+
+.banner button :hover {
+  color: white;
+  background-color: #3b5999;
+  border: 1px solid white;
+}
+
+h1 span:before {
+  content: "";
+  animation: gerak infinite 10s ease;
+  transform: translateY(-50%);
+  color: lightblue;
+  font-family: 70px;
+}
+
+@keyframes gerak {
+  0% {
+    content: "Yusril Fahmi";
+  }
+
+  35% {
+    content: "Qomaruzzaman";
+  }
+
+  45% {
+    content: "Ahmad Azriel Friyansyah";
+  }
+
+  60% {
+    content: "Muchammad Ikfani Difangga";
+  }
+
+  80% {
+    content: "Dimas Achyar Trizyaputra";
+  }
+
+  100% {
+    content: "El Mondo Riveno";
+  }
+}
+
+.Box-profile {
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 30px;
+  align-content: center;
+  padding-top: 50px;
+}
+
+.Box-profile h4 {
+  line-height: 3;
+}
+
+.Box-profile h3 {
+  margin-top: 15px;
+  line-height: 1;
+}
+.Box-profile h1{
+  line-height: 3.5;
+}
+
+.Box-profile img {
+  border-radius: 800px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.Box-Kiri,
+.Box-Tengah,
+.Box-Kanan,
+.Box-Kiri-bawah,
+.Box-Tengah-bawah,
+.Box-Kanan-bawah,
+.Box-Kanan-bawah,
+.Box-biodata {
+  width: 300px;
+  height: 400px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 30px 30px;
+  margin: 70px 0px 0px 70px;
+  border-radius: 10px;
+  float: left;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* menambahkan transition untuk efek transform */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.Box-Kiri :hover,
+.Box-Tengah :hover,
+.Box-Kanan :hover,
+.Box-Kiri-bawah :hover,
+.Box-Tengah-bawah :hover,
+.Box-Kanan-bawah :hover,
+.Box-Kanan-bawah :hover,
+.Box-biodata :hover {
+  background-color: #3b5999;
+  color: white;
+  transform: scale(1.05); 
+}
+
+.kotak-biodata {
+  transition: transform 0.3s ease-in;
+}
+
+.kotak-biodata:hover {
+  transform: scale(1.1); /* Perubahan ukuran saat dihover */
+  transition: transform 0.3s ease-out; /* Transisi dengan efek ease-out */
+}
+
+.Box-Pengalaman {
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 20px;
+  align-content: center;
+  padding-top: 50px;
+}
+
+.Box-Pengalaman h1 {
+  line-height: 3.5;
+}
+
+.Box-Pengalaman h4 {
+  line-height: 3;
+}
+
+.Box-Pengalaman p {
+  line-height: 2;
+}
+
+.Box-Pengalaman h3 {
+  margin-top: 15px;
+  line-height: 1;
+}
+
+.Box-Pengalaman img {
+  border-radius: 800px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.Box-Kiri-pengalaman,
+.Box-Tengah-pengalaman,
+.Box-Kanan-pengalaman,
+.Box-Kiri-bawah-pengalaman,
+.Box-Tengah-bawah-pengalaman,
+.Box-Kanan-bawah-pengalaman {
+  width: 300px;
+  height: 400px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 30px 30px;
+  margin: 70px 0px 0px 70px;
+  border-radius: 10px;
+  float: left;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* menambahkan transition untuk efek transform */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ketika kursor diarahkan ke kotak pengalaman */
+.Box-Kiri-pengalaman:hover,
+.Box-Tengah-pengalaman:hover,
+.Box-Kanan-pengalaman:hover,
+.Box-Kiri-bawah-pengalaman:hover,
+.Box-Tengah-bawah-pengalaman:hover,
+.Box-Kanan-bawah-pengalaman:hover {
+  transform: scale(1.1); 
+  background-color: #3b5999;
+  color: white;
+}
+
+.header-hobby {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 3;
+}
+
+figcaption {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+}
+
+figcaption h2,
+figcaption p {
+  margin: 0;
+}
+
+figcaption h2 {
+  font-size: 18px;
+}
+
+figcaption p {
+  font-size: 20px;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+article {
+  width: 30%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hobby-image {
+  position: relative;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.hobby-image img {
+  width: 55%;
+  border-radius: 50%;
+  border: 10px solid #3b5999;
+  
+}
+.hobby-image:hover img {
+  transform: scale(1.0.5);
+  box-shadow: 0 0 20px 10px rgba(19, 91, 198, 0.6); /* Efek zoom in menggunakan transform */
+}
+
+.hobby_div {
+  height: 440px;
+}
+
+div .anggota-kontak {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#formulir-kontak {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 30px;
+  padding: 80px;
+  border: 2px solid #000;
+}
+
+#formulir-kontak form {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#formulir-kontak form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+#formulir-kontak form input,
+#formulir-kontak form textarea {
+  width: 550px;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+}
+
+#formulir-kontak form button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 265px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  outline: none;
+  transition: 0.2s;
+}
+
+.anggota-kontak div{
+  width: 420px;
+  gap: 20px;
+  padding-bottom: 25px;
+  display: flex;
+  position:relative;
+  align-items:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#formulir-kontak .anggota-kontak div img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* margin-right: 15px; */
+  border: 1px solid #000000;
+}
+
+#formulir-kontak .anggota-kontak div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+  color: #5e5d5d;
+}
+
+#formulir-kontak .anggota-kontak div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.header_kontak {
+  text-align: center;
+  padding-top: 90px;
+}
+
+.header_kontak h1 {
+  line-height: 3.5;
+  font-size: 2em;
+}
+
+.header_kontak h1 p {
+  margin-top: 10px;
+}
+
+.footer-content {
+  position: absolute;
+  padding-bottom: -8px ;
+  text-align: center;
+  background-color: #3b4997;
+  width: 100%;
+  height: 78px;
+  color: white;
+}
+
+.footer-content p {
+  /* line-height: 7; */
+  padding-top: 30px;
+}
+
+.buttonAjax{
+  padding-right: 2em;
+}
+
+.buttonAjax ul li{
+  margin-left: 2em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.textArea{
+  position:relative;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 2px solid #3b5999;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 40px;
+  border-width: thick;
+  text-align: justify;
+  display: block;
+  padding: 20px;
+}
+
+
+/*# sourceMappingURL=main.css.map */

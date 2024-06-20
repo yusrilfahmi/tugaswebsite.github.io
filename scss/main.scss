@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    a {
+        button {
+            h2 {
+                background-color: #3b4997;
+                color: white;
+            }
+        }
+    }
+
+    button {
+        border: none;
+        outline: none;
+    }
+
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3b4997;
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    div & {
+        ul {
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+        }
+    }
+
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 60px;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                :hover {
+                    color: lightskyblue;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    background-color: #3b5999;
+    height: 640px;
+    text-align: center;
+    color: white;
+
+    img {
+        border-radius: 80px;
+        height: 180px;
+        margin-top: 200px;
+    }
+
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 90px;
+        padding: 10px;
+        width: 400px;
+        border-radius: 100px;
+        border: none;
+
+        :hover {
+            color: white;
+            background-color: #3b5999;
+            border: 1px solid white;
+        }
+    }
+}
+
+h1 span:before {
+    content: '';
+    animation: gerak infinite 10s ease;
+    transform: translateY(-50%);
+    color: lightblue;
+    font-family: 70px;
+
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Yusril Fahmi';
+    }
+
+    35% {
+        content: 'Qomaruzzaman';
+    }
+
+    45% {
+        content: 'Ahmad Azriel Friyansyah';
+    }
+
+    60% {
+        content: 'Muchammad Ikfani Difangga';
+    }
+
+    80% {
+        content: 'Dimas Achyar Trizyaputra';
+    }
+
+    100% {
+        content: 'El Mondo Riveno';
+    }
+}
+
+.Box-profile {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+
+    h4 {
+        line-height: 3.5;
+    }
+
+    h3 {
+        margin-top: 15px;
+        line-height: 1;
+    }
+
+    img {
+        border-radius: 800px;
+        height: 100px;
+        margin-top: 15px;
+    }
+}
+
+
+
+.Box-Kiri,
+.Box-Tengah,
+.Box-Kanan,
+.Box-Kiri-bawah,
+.Box-Tengah-bawah,
+.Box-Kanan-bawah,
+.Box-Kanan-bawah,
+.Box-biodata {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 0px 0px 80px;
+    border-radius: 10px;
+    float: left;
+
+    :hover {
+        background-color: #3b5999;
+        color: white;
+    }
+
+}
+
+.Box-Pengalaman {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+    padding-top: 50px;
+
+    h1 {
+        line-height: 3.5;
+    }
+
+    h4 {
+        line-height: 3;
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    h3 {
+        margin-top: 15px;
+        line-height: 1;
+    }
+
+    img {
+        border-radius: 800px;
+        height: 100px;
+        margin-top: 15px;
+    }
+}
+
+.Box-Kiri-pengalaman,
+.Box-Tengah-pengalaman,
+.Box-Kanan-pengalaman,
+.Box-Kiri-bawah-pengalaman,
+.Box-Tengah-bawah-pengalaman,
+.Box-Kanan-bawah-pengalaman {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 0px 0px 80px;
+    border-radius: 10px;
+    float: left;
+
+    :hover {
+        background-color: #3b5999;
+        color: white;
+    }
+}
+
+.header-hobby {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 3.0;
+
+
+}
+
+figcaption {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+
+    h2,
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 15px;
+        font-style: italic;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    width: 30%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hobby-image {
+    position: relative;
+
+    img {
+        width: 55%;
+        border-radius: 50%;
+        border: 10px solid #3b5999;
+    }
+}
+
+
+
+.hobby_div {
+    height: 440px;
+}
+
+.anggota-kontak {
+    div & {
+
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+#formulir-kontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 30px;
+    padding: 80px;
+    border: 2px solid #000;
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 26px;
+            line-height: 35px;
+            padding: 20px 0;
+        }
+
+        input,
+        textarea {
+            width: 550px;
+            padding: 12px 15px;
+            outline: none;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+        }
+
+        button {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 15px 265px;
+            color: black;
+            background-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid #000000;
+            outline: none;
+            transition: 0.2s;
+        }
+    }
+
+    .anggota-kontak {
+        div {
+            width: 50%;
+            padding-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                margin-right: 15px;
+                border: 1px solid #000000;
+            }
+
+            p {
+                margin: 0;
+                font-size: 13px;
+                line-height: 25px;
+                color: #5e5d5d;
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000;
+                }
+            }
+        }
+
+
+    }
+}
+
+.header_kontak {
+    text-align: center;
+
+    h1 {
+        line-height: 3.5;
+        font-size: 2em;
+
+        p {
+
+            margin-top: 10px;
+        }
+    }
+}
+
+.footer-content {
+    text-align: center;
+    background-color: #3b4997;
+    width: 100%;
+    height: 98px;
+    color: white;
+
+    p {
+        line-height: 7;
+    }
+}

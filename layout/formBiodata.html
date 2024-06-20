@@ -1,0 +1,68 @@
+<div class="customBiodata" id="customBiodata">
+
+  <h1 style="    text-align: center;
+  padding-top: 2em;
+  color: #4d4d4d;">Custom Biodata</h1>
+
+  <form action="upload.php" method="post" enctype="multipart/form-data" style="display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2em;
+  padding-block: 2em;
+  border: 2px solid #000;
+  padding: 40px;
+  margin: 60px;">
+    <label for="foto">Foto Profil:</label>
+    <br>
+    <input type="file" id="foto" name="foto" accept="image/*" style="text-align-last: center;">
+    <br>
+
+    <label for="nama" style="margin-block: 0.5em;">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" style="width: 500px;height: 35px;padding: 10px">
+    <br>
+
+    <label for="nim" style="margin-block: 0.5em;">NIM:</label>
+    <input type="text" id="nim" name="nim" placeholder="NIM" style="width: 500px;height: 35px;padding: 10px">
+    <br>
+
+    <label for="ttl" style="margin-block: 0.5em;">Tanggal Lahir:</label>
+    <input type="text" id="ttl" name="ttl" placeholder="Tanggal Lahir" style="width: 500px;height: 35px;padding: 10px">
+    <br>
+
+    <label for="alamat" style="margin-block: 0.5em;">Alamat:</label>
+    <input type="text" id="alamat" name="alamat" placeholder="Alamat" style="width: 500px;height: 35px;padding: 10px">
+    <br>
+
+    <label for="pekerjaan" style="margin-block: 0.5em;">Pekerjaan:</label>
+    <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"
+      style="width: 500px;height: 35px;padding: 10px">
+    <br>
+
+    <button type="submit" name="tambahMahasiswa"
+      style="margin-block: 1.5em;width: 525px;height: 40px;border-radius: 7px;">Tambahkan
+      Mahasiswa</button>
+
+    <button type="submit" name="editMahasiswa"
+      style="margin-block: 1.5em;width: 525px;height: 40px;border-radius: 7px">Edit
+      Mahasiswa</button>
+
+    <label for="NimHps" style="margin-block: 0.5em;">NIM:</label>
+    <input type="text" id="NimHps" name="NimHps" placeholder="Masukkan NIM Mahasiswa yang akan dihapus"
+      style="width: 500px;height: 35px;padding: 10px">
+    <br>
+
+    <button type="submit" name="hapusMahasiswa"
+      style="margin-block: 1.5em;width: 525px;height: 40px;border-radius: 7px">Hapus
+      Mahasiswa</button>
+
+    <!-- <button type="submit" name="delete" style="margin-block: 1.5em;width: 525px;height: 40px;border-radius: 7px">Hapus
+      Mahasiswa</button> -->
+
+    <p style="padding-top: 1em; color: darkgray;">
+      Pastikan NIM Benar, karena NIM menjadi patokan untuk mengedit data.
+    </p>
+  </form>
+
+
+</div>

@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo a button h2 {
+    background-color: #3b4997;
+    color: white;
+}
+
+.logo button {
+    border: none;
+    outline: none;
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3b4997;
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+div .menu ul {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: lightskyblue;
+    font-style: italic;
+}
+
+.banner {
+    background-color: #3b5999;
+    height: 640px;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    border-radius: 80px;
+    height: 180px;
+    margin-top: 200px;
+}
+
+.banner h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    margin-top: 90px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 100px;
+    border: none;
+}
+
+.banner button:hover {
+    color: white;
+    background-color: #3b5999;
+    border: 1px solid white;
+}
+
+h1 span:before {
+    content: '';
+    animation: gerak infinite 10s ease;
+    transform: translateY(-50%);
+    color: lightblue;
+    font-family: 70px;
+
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Yusril Fahmi';
+    }
+
+    35% {
+        content: 'Qomaruzzaman';
+    }
+
+    45% {
+        content: 'Ahmad Azriel Friyansyah';
+    }
+
+    60% {
+        content: 'Muchammad Ikfani Difangga';
+    }
+
+    80% {
+        content: 'Dimas Achyar Trizyaputra';
+    }
+
+    100% {
+        content: 'El Mondo Riveno';
+    }
+}
+
+/* Biodata */
+
+.Box-profile {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+}
+
+.Box-profile p,
+h4 {
+    line-height: 3.5;
+}
+
+.Box-profile h3 {
+    margin-top: 15px;
+    line-height: 1;
+}
+
+
+.Box-profile img {
+    border-radius: 800px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.Box-Kiri,
+.Box-Tengah,
+.Box-Kanan,
+.Box-Kiri-bawah,
+.Box-Tengah-bawah,
+.Box-Kanan-bawah {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 20px 20px 55px;
+    border-radius: 10px;
+    float: left;
+}
+
+.Box-Kiri:hover,
+.Box-Tengah:hover,
+.Box-Kanan:hover,
+.Box-Kiri-bawah:hover,
+.Box-Tengah-bawah:hover,
+.Box-Kanan-bawah:hover {
+    background-color: #3b5999;
+    color: white;
+}
+
+
+
+/* Pengalaman */
+
+.Box-Pengalaman {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.Box-Pengalaman h1 {
+    line-height: 3.5;
+}
+
+.Box-Pengalaman h4 {
+    line-height: 3;
+}
+
+.Box-Pengalaman p {
+    line-height: 2;
+}
+
+.Box-Pengalaman h3 {
+    margin-top: 15px;
+    line-height: 1;
+}
+
+.Box-Pengalaman img {
+    border-radius: 800px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.Box-Kiri-pengalaman,
+.Box-Tengah-pengalaman,
+.Box-Kanan-pengalaman,
+.Box-Kiri-bawah-pengalaman,
+.Box-Tengah-bawah-pengalaman,
+.Box-Kanan-bawah-pengalaman {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 20px 20px 20px 55px;
+    border-radius: 10px;
+    float: left;
+}
+
+.Box-Kiri-pengalaman:hover,
+.Box-Tengah-pengalaman:hover,
+.Box-Kanan-pengalaman:hover,
+.Box-Kiri-bawah-pengalaman:hover,
+.Box-Tengah-bawah-pengalaman:hover,
+.Box-Kanan-bawah-pengalaman:hover {
+    background-color: #3b5999;
+    color: white;
+}
+
+/* Hobby */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-hobby {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 3.0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    width: 30%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+main>article:nth-child(n + 5) {
+    margin-top: 150px;
+}
+
+.hobby-image {
+    position: relative;
+}
+
+.hobby-image img {
+    width: 55%;
+    border-radius: 50%;
+    border: 10px solid #3b5999;
+}
+
+figcaption {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+}
+
+figcaption h2,
+figcaption p {
+    margin: 0;
+}
+
+figcaption h2 {
+    font-size: 18px;
+}
+
+figcaption p {
+    font-size: 20px;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+
+/* Kontak */
+
+#formulir-kontak form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+.header_kontak h2,
+p {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.header_kontak h2 {
+    line-height: 3.5;
+}
+
+#formulir-kontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 30px;
+    padding: 80px;
+    border: 2px solid #000;
+}
+
+#formulir-kontak form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+#formulir-kontak form input,
+#formulir-kontak form textarea {
+    width: 550px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+}
+
+#formulir-kontak form button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 265px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    outline: none;
+    transition: 0.2s;
+}
+
+div .anggota-kontak {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#formulir-kontak .anggota-kontak div {
+    width: 50%;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#formulir-kontak .anggota-kontak div img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 1px solid #000000;
+}
+
+#formulir-kontak .anggota-kontak p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+    color: #5e5d5d;
+}
+
+#formulir-kontak .anggota-kontak p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Footer */
+
+.footer-content {
+    text-align: center;
+    background-color: #3b4997;
+    width: 100%;
+    height: 98px;
+    color: white;
+}
+
+.footer-content p {
+    line-height: 7;
+}
+
+.buttonAjax ul li button{
+    margin-top: 2em;
+}
+
+/* @media (max-width: 600px) {
+    .banner {
+        background-color: yellow;
+    }
+} */
+.hobby_div {
+    height: 430px;
+}

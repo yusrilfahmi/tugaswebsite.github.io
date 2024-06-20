@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Tugas Web 1</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <!-- Ini Navigasi Home -->
+  <div class="navigasi">
+
+    <div class="logo">
+      <a href="#home"><button>
+          <h2>Tugas Pemweb 1</h2>
+        </button></a>
+    </div>
+    <!-- Ini Menu Navigasi -->
+    <div class="menu">
+      <ul>
+        <li><a href="#biodata">Biodata</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="#hobby">Hobi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#customBiodata">Custom</a></li>
+        <li><a href="#story">Story</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Ini Banner Home -->
+  <div class="banner" id="home">
+    <img src="gambar/people.png">
+    <h1>Hai... <span></span></h1>
+    <p>Berikut Hasil Pengerjaan Tugas Kelompok Kami</p>
+    <a href="#biodata"><button>Selengkapnya</button></a>
+  </div>
+  <!-- Custom Biodata -->
+  <div class="customBiodata" id="customBiodata">
+    <h1 style="    text-align: center;
+  padding-top: 2em;
+  color: #4d4d4d;">Custom Biodata</h1>
+    <form id="mahasiswaForm" method="POST" style="display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2em;
+  padding-block: 2em;
+  border: 2px solid #000;
+  padding: 40px;
+  margin: 60px;">
+
+      <label for="foto">Foto Profil:</label>
+      <br>
+      <input type="file" id="foto" name="foto" accept="image/*" style="text-align-last: center;">
+      <br>
+      <label for="nama" style="margin-block: 0.5em;">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"
+        style="width: 500px;height: 35px;padding: 10px">
+      <br>
+      <label for="nim" style="margin-block: 0.5em;">NIM:</label>
+      <input type="text" id="nim" name="nim" placeholder="NIM" style="width: 500px;height: 35px;padding: 10px">
+      <br>
+      <label for="ttl" style="margin-block: 0.5em;">Tanggal Lahir:</label>
+      <input type="text" id="ttl" name="ttl" placeholder="Tanggal Lahir"
+        style="width: 500px;height: 35px;padding: 10px">
+      <br>
+      <label for="alamat" style="margin-block: 0.5em;">Alamat:</label>
+      <input type="text" id="alamat" name="alamat" placeholder="Alamat" style="width: 500px;height: 35px;padding: 10px">
+      <br>
+      <label for="pekerjaan" style="margin-block: 0.5em;">Pekerjaan:</label>
+      <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"
+        style="width: 500px;height: 35px;padding: 10px">
+      <br>
+
+      <button type="button" onclick="tambahMahasiswa()"
+        style="margin-block: 1.5em;width: 525px;height: 40px;border-radius: 7px;">Tambahkan
+        Mahasiswa</button>
+      <button type="button" onclick="editMahasiswa()"
+        style="margin-block: 1.5em;width: 525px;height: 40px;border-radius: 7px">Edit
+        Mahasiswa</button>
+
+
+      <label for="NimHps" style="margin-block: 0.5em;">NIM:</label>
+      <input type="text" id="NimHps" name="NimHps" placeholder="NIM" style="width: 500px;height: 35px;padding: 10px">
+      <br>
+
+      <button type="button" onclick="hapusMahasiswa()"
+        style="margin-block: 1.5em;width: 525px;height: 40px;border-radius: 7px">Hapus
+        Mahasiswa</button>
+      <p style="padding-top: 1em; color: darkgray;">
+        Pastikan NIM Benar, karena NIM menjadi patokan untuk mengedit data.
+      </p>
+    </form>
+
+    <script src="Fungsi.js"></script>
+  </div>
+
+  <!-- Biodata -->
+  <div class="Box-profile" id="biodata">
+
+    <h1>Biodata</h1>
+
+    <div id="biodataContainer"></div>
+
+
+  </div>
+
+  <h1 style="
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;" id="story">Story</h1>
+
+  <a class="textArea" id="tampilkan">
+    <span>halo ges ini adalah beberapa cerita teman-teman kami </span>
+  </a>
+
+  <!-- Pengalaman -->
+  <div class="Box-Pengalaman" id="pengalaman">
+    <h1>Pengalaman</h1>
+    <div class="Box-Kiri-pengalaman">
+      <img src="gambar/1.jpeg">
+      <p>
+        <h3>Yusril Fahmi</h3>
+      </p>
+      <p>
+        <h3>220602014</h3>
+      </p>
+      <h4>Pekerjaan :</h4>
+      PT. Hewan Purba 1555-Sekarang
+      <h4>Organisasi :</h4>
+      <p>Kominfo 1456-Sekarang <br />
+        Awet Muda 1675-Sekarang <br />
+        Anti Makan 1556 - Sekarang</p>
+    </div>
+
+    <div class="Box-Tengah-pengalaman">
+      <img src="gambar/2.jpeg">
+      <p>
+        <h3>Qomaruzzaman</h3>
+      </p>
+      <p>
+        <h3>220602006</h3>
+      </p>
+      <h4>Pekerjaan :</h4>
+      PT. Pintu Kemana Saja 2021-2022
+      <h4>Organisasi :</h4>
+      <p>Doraemon club 2019-2022 <br />
+        Research Susu Gratis 2019-2020 <br />
+        Majelis Umat 2022 - Sekarang</p>
+    </div>
+
+    <div class="Box-Kanan-pengalaman">
+      <img src="gambar/3.jpeg">
+      <p>
+        <h3>A. Azriel Friyansyah</h3>
+      </p>
+      <p>
+        <h3>220602043</h3>
+      </p>
+      <h4>Pekerjaan :</h4>
+      PT. Toufan Beliung 2021-2022
+      <h4>Organisasi :</h4>
+      <p>Avatar 2019-2022 <br />
+        Pimpinan Suku Angin 2020-2023 <br />
+        Pengendali Angin 2022 - Sekarang</p>
+    </div>
+
+    <div class="Box-Kiri-bawah-pengalaman">
+      <img src="gambar/4.png">
+      <p>
+        <h3>Zaky Elmondo Riveno</h3>
+      </p>
+      <p>
+        <h3>220602002</h3>
+      </p>
+      <h4>Pekerjaan :</h4>
+      PT. Ngakak Indonesia 2021-2023
+      <h4>Organisasi :</h4>
+      <p>Harus Rasan-Rasan 2019-2022 <br />
+        Esport Pou 2019-2022 <br />
+        IRON Sepak Besi 2022 - Sekarang</p>
+    </div>
+
+    <div class="Box-Tengah-bawah-pengalaman">
+      <img src="gambar/5.jpeg">
+      <p>
+        <h3>M. Ikfani Difangga</h3>
+      </p>
+      <p>
+        <h3>220602011</h3>
+      </p>
+      <h4>Pekerjaan :</h4>
+      PT. Jaya Planet Mars 2021-2023
+      <h4>Organisasi :</h4>
+      <p>Pimpinan Planet Mars 2019-sekarang <br />
+        Research Kurban Mars 2019-2022 <br />
+        Ngopi Atas Langit 2022-Sekarang</p>
+    </div>
+
+    <div class="Box-Kanan-bawah-pengalaman">
+      <img src="gambar/6.jpeg">
+      <p>
+        <h3>Dimas Achyar T.</h3>
+      </p>
+      <p>
+        <h3>220602046</h3>
+      </p>
+      <h4>Pekerjaan :</h4>
+      PT. MCS Cab. Purnama 2021-2022
+      <h4>Organisasi :</h4>
+      <p>EpEp baywan 2019-2022 <br />
+        Pimpinan Penyetan 2019-Sekarang <br />
+        Emel Baywan 2022 - Sekarang</p>
+    </div>
+  </div>
+  <!-- Hobby -->
+  <div class="header-hobby" id="hobby">
+    <h1>Hobby</h1>
+  </div>
+  <div class="hobby_div">
+    <main>
+      <article>
+        <figure class="hobby-image">
+          <img src="assets/image/1.jpeg" alt="Image 1">
+          <figcaption>
+            <h2>Yusril Fahmi</h2>
+            <p>"Sepak Bola"</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure class="hobby-image">
+          <img src="assets/image/2.jpeg" alt="Image 2">
+          <figcaption>
+            <h2>Ahmad Azriel Friyansyah</h2>
+            <p>"Basket"</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure class="hobby-image">
+          <img src="assets/image/3.jpeg" alt="Image 3">
+          <figcaption>
+            <h2>Muhammad Ikhfani Difangga</h2>
+            <p>"Badminton"</p>
+          </figcaption>
+        </figure>
+      </article>
+    </main>
+  </div>
+  <div>
+    <main>
+      <article>
+        <figure class="hobby-image">
+          <img src="assets/image/4.png" alt="Image 4">
+          <figcaption>
+            <h2>Qomaruzzaman</h2>
+            <p>"Bersepeda"</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure class="hobby-image">
+          <img src="assets/image/5.jpeg" alt="Image 5">
+          <figcaption>
+            <h2>Dimas Achyar Trizyaputra</h2>
+            <p>"Memancing"</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure class="hobby-image">
+          <img src="assets/image/6.jpeg" alt="Image 6">
+          <figcaption>
+            <h2>Zaky EL Mondo Rivenno</h2>
+            <p>"Bermain Games"</p>
+          </figcaption>
+        </figure>
+      </article>
+    </main>
+  </div>
+
+  <!-- AJAX -->
+
+  <!-- Kontak -->
+
+  <div style="height: 10px;"></div>
+  <section class="header_kontak" id="kontak">
+    <h1>Kontak Kami</h1>
+    <p> Kami sangat senang mendengar masukan dari Anda. Silahkan tinggalkan pesan anda pada kolom yang tersedia</p>
+  </section>
+
+  <div id="formulir-kontak">
+    <form action="">
+      <input type="text" placeholder="Nama">
+      <input type="text" placeholder="E-mail">
+      <input type="text" placeholder="Nomor Telepon">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
+      <button class="normal">Kirim</button>
+    </form>
+
+    <div class="anggota-kontak">
+      <div>
+        <img src="./foto/Mas El.jpeg" alt="">
+        <p><span>Zaky Elmondo Riveno</span> Teknik Informatika <br> WhatsApp: 0851-5705-5815 <br>Email:
+          zakyelmondo@gmail.com <br> Instagram: @</p>
+      </div>
+      <div>
+        <img src="./foto/Izzam.jpeg" alt="">
+        <p><span>Qomaruzzaman</span> Teknik Informatika <br> WhatsApp: 0881-6058-607 <br>Email: Izamganteng@gmail.com
+          <br> Instagram: @izzamqoo_</p>
+      </div>
+      <div>
+        <img src="./foto/Fafan.jpeg" alt="">
+        <p><span>M. Ikfani Difangga</span> Teknik Informatika <br> WhatsApp: 0851-0479-0440 <br>Email:
+          ikfanidifangga@gmail.com <br> Instagram: @fafan.pdf</p>
+      </div>
+      <div>
+        <img src="./foto/Mas Yusril.jpeg" alt="">
+        <p><span>Yusril Fahmi</span> Teknik Informatika <br> WhatsApp: 0851-5680-4614 <br>Email: yusrilfahmi@gamil.com
+          <br> Instagram: @yusril_gamin </p>
+      </div>
+      <div>
+        <img src="./foto/Azriel.jpg" alt="">
+        <p><span>Ahmad Azriel Friyansyah</span> Teknik Informatika <br> WhatsApp: 0812-3081-8041 <br>Email:
+          azrielfriyansyah@gmail.com <br> Instagram: @azrielff </p>
+      </div>
+      <div>
+        <img src="./foto/Dimas.jpeg" alt="">
+        <p><span>Dimas Achyar Trizyaputra</span> Teknik Informatika <br> WhatsApp: 0823-3674-7788 <br>Email:
+          achyartrizyaputra@gmail.com <br> Instagram: @iam_zilxvx</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="footer-content">
+      <p>Sekian hasil kerja kelompok kami, terima kasih.</p>
+
+    </div>
+  </footer>
+
+  <script src="Fungsi.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+#formulir-kontak form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}  
+
+#formulir-kontak{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    padding: 80px;
+    border: 2px solid #000;
+}
+#formulir-kontak form{
+    width: 65%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+#formulir-kontak form input,
+#formulir-kontak form textarea{
+    width: 550px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+}
+#formulir-kontak form button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 265px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+#formulir-kontak .anggota-kontak div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    
+}
+#formulir-kontak .anggota-kontak div img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 15px; 
+    border: 1px solid #000000;
+}
+#formulir-kontak .anggota-kontak p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+    color: #5e5d5d;
+}
+#formulir-kontak .anggota-kontak p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}

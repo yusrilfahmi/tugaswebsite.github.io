@@ -1,0 +1,37 @@
+.Box-profile{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+}
+.Box-profile{
+    p{
+        line-height: 0.1;
+    }
+    h3{
+        line-height: 1;
+    }
+    h4{
+        line-height: 0.1;
+    }
+   
+}
+.Box-profile img{
+    border-radius: 800px;
+    height: 100px;
+    margin-top: 15px;
+}
+.Box-Kiri, .Box-Tengah, .Box-Kanan, .Box-Kiri-bawah, .Box-Tengah-bawah, .Box-Kanan-bawah{
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 0px 0px 70px;
+    border-radius: 10px;
+    float : left;
+}
+.Box-Kiri:hover, .Box-Tengah:hover, .Box-Kanan:hover, .Box-Kiri-bawah:hover, .Box-Tengah-bawah:hover, .Box-Kanan-bawah:hover{
+background-color: #3b5999;
+color: white;
+}
